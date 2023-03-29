@@ -1,0 +1,175 @@
+/**
+*@author Francisco Junior
+*@author edilson ricardo
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+/* CSS reset */
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.container {
+
+    background-color: #F4F4F4;
+    height: 100vh;
+    width: 100%;
+
+
+}
+
+.div-img {
+
+    position: absolute;
+    left: 8.65%;
+    right: 58.01%;
+    top: 14.94%;
+    bottom: 22.61%;
+}
+
+img {
+    width: 100%;
+
+}
+
+.container-login {
+    position: absolute;
+    left: 54.79%;
+    right: 4.17%;
+    top: 4.1%;
+    bottom: 4.1%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+
+    padding: 15px 25px 0px 25px;
+
+}
+
+
+
+.welcome-text p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #6358DC;
+    font-weight: 900;
+
+}
+
+#div-buttom {
+
+    margin-top: 20px;
+
+}
+
+#div-buttom img {
+    width: 5%;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#div-buttom a {
+    text-decoration: none;
+    /* font-family: 'Poppins', sans-serif; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttom {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+}
+
+#div-buttom p {
+    font-size: 12px;
+
+}
+
+.flex {
+
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex p {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.row {
+    min-width: 200px;
+    border-color: #BFBFBF;
+}
+
+.div-form {
+    margin-top: 25px;
+}
+
+.flex1 {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #ECECEC;
+    border-radius: 8px;
+    padding: 10px 0px 10px 15px;
+}
+
+.flex1 p {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+
+    background-color: #ECECEC;
+    border: none;
+    min-width: 400px;
+
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
