@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
@@ -62,31 +63,68 @@
 
             <div class="div-form">
 
-                <form action="#">
+                <form>
 
                     <label class="flex1">
                         <img style="width: 5%;" src="assets/img/email.png">
                         <label class="flex2">
                             <p>Email</p>
-                            <input type="text" placeholder="example@gmail.com">
+                            <input class="text-input" type="text" placeholder="example@gmail.com">
                         </label>
                     </label>
 
-                    <label class="flex1">
-                        <img style="width: 5%;" src="assets/img/key.png">
-                        <label class="flex2">
-                            <p>Password</p>
-                            <input type="text" placeholder="*********">
+                    <label class="flex1 space">
+                        <label class="flex1 pad">
+                            <img style="width: 8%;" src="assets/img/key.png">
+                            <label class="flex2">
+                                <p>Password</p>
+                                <input class="text-input" type="password" placeholder="*********">
+                            </label>
+
+
                         </label>
+                        <img style="width: 5%;" src="assets/img/eyes.png">
                     </label>
+
+
+
+                    <label class="div">
+                        <label id="save-passoword">
+                            <!-- <img  style="width: 5%;"src="assets/img/check.png" alt=""> -->
+                            <input type="checkbox" id="check">
+                            <label for="check">Remeber me</label>
+                        </label>
+
+                        <div><a href="">Forgot password</a></div>
+                    </label>
+
+                    <label class="buttom btn-login">
+                        <input type="submit" value="Login">
+                    </label>
+
+
+
+                    <p style="font-size: 12px; text-align: center;">Don't have an account?<a href="#">Register</a></p>
 
                 </form>
 
+
             </div>
+
+
+
+
 
         </div>
 
+
+
+
     </div>
+
+
+
+
 
 
 </body>
