@@ -20,8 +20,8 @@
 body {
 
     background-color: #F4F4F4;
-   
-  
+
+
 
 
 }
@@ -59,13 +59,22 @@ img {
 }
 
 
+.welcome-text {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
 .welcome-text p {
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 
+
+
 }
+
 
 h1 {
     font-size: 30px;
@@ -109,7 +118,13 @@ ul {
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
     border-radius: 8px;
+    transition: background 1.5s;
 }
+
+.btn-login:hover {
+    background-color: #996ee8;
+}
+
 
 #div-buttom p {
     font-size: 12px;
@@ -242,7 +257,7 @@ a {
 }
 
 .btn-login input {
-    background-color: #6358DC;
+    background-color: transparent;
     border: none;
     color: #FFFFFF;
 }
@@ -265,6 +280,12 @@ form p:last-child {
     margin-top: 10px;
 }
 
+@media(max-width:360px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
 @media(min-width:280px) and (max-width:1024px) {
 
 
@@ -281,11 +302,11 @@ form p:last-child {
 
     }
 
-  
+
 
     .container {
         height: 100%;
-    
+
         padding: 20px 30px;
     }
 
