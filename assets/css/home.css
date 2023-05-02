@@ -36,8 +36,6 @@
 }
 
 header {
-
-
     padding: 20px 30px 10px 30px;
     display: flex;
     align-items: center;
@@ -106,6 +104,10 @@ label {
         transform: translateY(0);
         visibility: visible;
 
+    }
+
+    #paragrafo{
+        margin-bottom: 20px;
     }
 
 
@@ -207,10 +209,11 @@ label {
     }
 
     .botaoSaibaMais{
-        padding: 12px 18px;
+        padding: 8px 18px;
         border: 1px solid rgb(83, 241, 83);
         color: rgb(83, 241, 83);
         border-radius: 50px; 
+        
     }
 
     #div-img img {
@@ -235,8 +238,8 @@ label {
     }
 
     .underMain .container2 a{
-        margin: 250px;
-
+        /* margin: 250px; */
+        
     }
 
     #paragrafoDev {
@@ -264,4 +267,6 @@ label {
         font-size: 12px;
         padding-left: 35px;
     }
+
+    
 }
