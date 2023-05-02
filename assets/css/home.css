@@ -13,6 +13,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+ 
 
 .underMain{
     background-color: #060460;
@@ -20,6 +21,8 @@
     padding: 70px 70px 70px;
     display: flex;
 }
+
+
 
 .container2{
     max-width: 50vw;
@@ -95,6 +98,7 @@ label {
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
+        
     }
 
 

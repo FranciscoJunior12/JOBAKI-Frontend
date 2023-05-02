@@ -1,0 +1,93 @@
+/* CSS RESET */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 70vw;
+
+}
+
+.Container {
+    margin: 10px 30px;
+}
+
+.profiles {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.Flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightSide {
+    height: 100vh;
+    background-color: #6358DC;
+    width: 30vw;
+    position: fixed;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.button{
+    padding: 12px 18px;
+    border: 1px solid #5632AF;
+    color: #5632AF;
+    border-radius: 50px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 45px;
+}
+
+
+header {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.11);
+
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #6358DC;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+main p{
+    margin-top: 60px;
+}
+
+main p a{
+    text-decoration: underline;
+}
