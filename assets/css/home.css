@@ -17,7 +17,7 @@
 .underMain{
     background-color: #060460;
     color: white;
-    padding: 30px 70px 70px;
+    padding: 70px 70px 70px;
     display: flex;
 }
 
@@ -107,7 +107,7 @@ label {
     }
 
     #paragrafo{
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
 
@@ -196,7 +196,7 @@ label {
         position: relative;
         bottom: 307px;
         width: 100%;
-        height: 120%;
+        height: 98%;
         background-color: rgba(5, 29, 245, 0.524);
         opacity: 0.5;
         border-radius: 20px;
@@ -224,7 +224,7 @@ label {
     .underMain{
         flex-direction: row;
         justify-content: space-between;
-        max-height: 350px;
+        max-height: 500px;
     }
 
     #img2{
