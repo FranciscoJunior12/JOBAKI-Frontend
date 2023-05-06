@@ -1,4 +1,5 @@
 /* CSS RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
 * {
     border: 0px;
     margin: 0px;

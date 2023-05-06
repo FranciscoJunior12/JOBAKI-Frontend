@@ -23,7 +23,6 @@ body {
 
 .container {
     background-color: #F4F4F4;
-    /* height: 100%; */
     width: 100%;
     display: flex;
     justify-content: space-evenly;
