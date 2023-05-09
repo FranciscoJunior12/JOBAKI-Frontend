@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+
 
 </head>
 
@@ -14,14 +16,11 @@
 
 
     <div class="container">
-
-
         <div class="div-img">
             <img src="assets/img/Illustration.svg" alt="">
         </div>
 
         <div class="container-login">
-
             <div class="welcome-text">
                 <p style="display: inline;">Welcome to
                 <h1 style="display: inline;"> JOBAKI</h1>
@@ -67,11 +66,12 @@
 
                 <form>
 
+
                     <label class="flex1">
                         <img style="width: 5%;" src="assets/img/email.png">
                         <label class="flex2">
                             <p>Email</p>
-                            <input class="text-input" type="text" placeholder="example@gmail.com">
+                            <input class="text-input" type="text" placeholder="example@gmail.com" id="user">
                         </label>
                     </label>
 
@@ -80,7 +80,7 @@
                             <img style="width: 8%;" src="assets/img/key.png">
                             <label class="flex2">
                                 <p>Password</p>
-                                <input class="text-input" type="password" placeholder="*********">
+                                <input class="text-input" type="password" placeholder="*********" id="senha">
                             </label>
 
 
@@ -101,7 +101,7 @@
                     </label>
 
                     <label class="buttom btn-login">
-                        <input type="submit" value="Login">
+                        <input type="submit" value="Login" id="btn-login">
                     </label>
 
 
@@ -128,7 +128,7 @@
 
 
 
-
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
