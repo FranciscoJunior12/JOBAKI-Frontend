@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar freenlancer</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/styleee.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/formulario-freelancer.css">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div id="logo" class="Container">
+            <h1>JOBAKI</h1>
+        </div>
+    </header>
+
+    <main>
+
+
+        <div id="div-formulario">
+            <!-- Profile Edit Form -->
+            <form>
+                <div class="row mb-3">
+                    <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Foto de perfil</label>
+                    <div class="col-md-8 col-lg-9">
+                        <img src="assets/img/profile-img.jpg" alt="Profile">
+                        <div class="pt-2">
+                            <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i
+                                    class="bi bi-upload"></i></a>
+                            <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i
+                                    class="bi bi-trash"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Área de actuação</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="fullName" type="text" class="form-control" id="area_actuacao"
+                            placeholder="@exemplo: backend , frontend, fullstack..." required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="about" class="col-md-4 col-lg-3 col-form-label">Sobre</label>
+                    <div class="col-md-8 col-lg-9">
+                        <textarea name="about" class="form-control" id="sobre" style="height: 100px"
+                            placeholder="@exemplo: sou um desenvolvedor freelancer, tenho habilidades sólidas em linguagens de programação, tanto no desenvolvimento de back-end quanto no front-end...." required></textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="company" class="col-md-4 col-lg-3 col-form-label">Tecnologias</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="company" type="text" class="form-control" id="tecnologia" value=""
+                            placeholder="@exemplo: HTML, CSS, JavaScript..." required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="Country" class="col-md-4 col-lg-3 col-form-label">Experiencia</label>
+                    <div class="col-md-8 col-lg-9">
+                        <textarea name="about" class="form-control" id="experiencia" style="height: 100px"
+                            placeholder="Descreva brevemente a empresa ou o tipo de projetos em que trabalhou e sua função no mesmo. Destaque suas principais responsabilidades e conquistas relevantes..."></textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="Job" class="col-md-4 col-lg-3 col-form-label">Ano de Experiência</label>
+                    <div class="col-md-8 col-lg-9">
+                        <select name="" id="Ano_experiencia" class="form-control" required>
+                            <option value="" selected disabled>--selecione--</option>
+                            <option value="1">1 ano</option>
+                            <option value="2">1 a 3 anos</option>
+                            <option value="3">3 a 5 anos</option>
+                            <option value="4">5 a 10 anos</option>
+                            <option value="5"> +10 anos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="Address" class="col-md-4 col-lg-3 col-form-label">Provincia</label>
+                    <div class="col-md-8 col-lg-9">
+                        <select name="" id="provincia" class="form-control" required>
+                            <option value="" selected disabled>--selecione--</option>
+                            <option value="maputo">Maputo</option>
+                            <option value="gaza">Gaza</option>
+                            <option value="inhambane">Inhambane</option>
+                            <option value="sofala">Sofala</option>
+                            <option value="manica">Manica</option>
+                            <option value="tete">Tete</option>
+                            <option value="zambezia">Zambezia</option>
+                            <option value="nampula">Nampula</option>
+                            <option value="niassa">Niassa</option>
+                            <option value="cabodelgado">Cabo Delgado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="Linkedin" class="col-md-4 col-lg-3 col-form-label">Perfil de Linkedin</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="linkedin" type="text" class="form-control" id="Linkedin"
+                            placeholder="@exemplo: https://linkedin.com/#">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="Github" class="col-md-4 col-lg-3 col-form-label">Perfil de Github</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="Github" type="text" class="form-control" id="Github"
+                            placeholder="@exemplo: https://github.com/#">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="Twitter" class="col-md-4 col-lg-3 col-form-label">Portifolio</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="twitter" type="text" class="form-control" id="portifolio"
+                            placeholder="@exemplo: https://meuportifolio.com/#" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="Instagram" class="col-md-4 col-lg-3 col-form-label">Perfil Instagram</label>
+                    <div class="col-md-8 col-lg-9">
+                        <input name="instagram" type="text" class="form-control" id="instagram"
+                            placeholder="@exemplo: https://instagram.com/#">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" style="background: #6358DC; color:white" class="btn" id="btn-guardar">Guardar</button>
+                </div>
+            </form><!-- End Profile Edit Form -->
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="rightSide">
+            <h2>JOBAKI. <br> Liberte. <br> seu Talento.</h2>
+        </div>
+
+
+    </main>
+
+
+
+
+<script src="assets/js/formulario-freelancer.js"></script>
+</body>
+
+</html>

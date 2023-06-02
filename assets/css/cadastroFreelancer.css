@@ -31,7 +31,7 @@ body {
     gap: 20px;
 }
 
-.Flex{
+.Flex {
     display: flex;
     flex-direction: row;
     font-size: 12px;
@@ -57,7 +57,7 @@ body {
     background-color: #6358DC;
 }
 
-#check{
+#check {
     width: 15px;
     height: 15px;
 }
@@ -73,7 +73,7 @@ input {
     padding: 0px 10px;
 }
 
-label{
+label {
     margin-left: 5px;
 }
 

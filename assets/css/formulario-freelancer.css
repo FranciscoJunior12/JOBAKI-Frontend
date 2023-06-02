@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+/* CSS reset */
+* {
+
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.11);
+    width: 70%;
+    background-color: #F4F4F4;;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #6358DC;
+    font-weight: 900;
+}
+
+.rightSide h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 4%;
+    color: #6358DC;
+}
+
+.rightSide {
+
+    width: 35%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    background-color: #6358DC;
+    background-image: url(https://wkncdn.com/newx/assets/build/img/talent-onboard/talent-onboard-signup-bg-dsk.e071bb82d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: bottom;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 15px;
+    min-height: 500px;
+    margin-top: 7%;
+}
+
+#div-formulario {
+
+    width: 100%;
+    min-width: 800px;
+    max-width: 500px;
+    padding: 15px 50px 50px;
+    border: 1px solid gray;
+    
+}
+
+#div-create-account h2 {
+    text-align: center;
+    font-size: 25px;
+
+    line-height: 1.3;
+
+    margin: 2%;
+
+    color: #3C3C3C;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+
+}
+
+#div-buttons ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#div-buttons a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#div-buttons img {
+    width: 5%;
+
+}
+
+.buttom {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    transition: background 1.5s;
+    border: 1px solid #d6d6d6;
+}
+
+
+.flex {
+
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-color: #7246E5;
+}
+
+.row {
+    min-width: 170px;
+
+}
+
+hr {
+    border: 0.5px solid #ded2ff;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.text-input {
+
+    /* background-color: #F4F4F4; */
+    border: 1px solid #ded2ff;
+    padding: 15px;
+    border-radius: 10px;
+
+
+
+}
+
+input:focus-visible {
+    outline: 1px solid #7246E5;
+
+}
+
+span {
+    display: none;
+}
+
+span {
+    color: #ff699d;
+    font-size: 12px;
+}
+
+#op {
+    font-size: 16px;
+
+
+}
+
+#teste {
+    height: 100px;
+    width: 100%;
+
+}
+
+#termos-seguranca {
+    font-size: 13px;
+    letter-spacing: 0.5px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+
+.btn-login {
+
+    background-color: #6358DC;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 4%;
+}
+
+.btn-login input {
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+
+}
+select:focus{
+    outline: 1.5px solid #7246E5; 
+}
+
+
+
