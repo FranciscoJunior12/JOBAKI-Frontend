@@ -1,0 +1,55 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f6f9ff;
+    color: #444444;
+}
+
+.card {
+    max-height: 350px;
+    min-height: 350px;
+    overflow-y: scroll;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-proposta {
+    border: 2px solid #6358DC;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #6358DC;
+}
+
+.data-publicacao {
+    font-size: 11px;
+}
+
+.card::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da barra de rolagem */
+}
+
+.card::-webkit-scrollbar-thumb {
+    background-color: #b9b6b6;
+    /* Cor do polegar da barra de rolagem */
+    border-radius: 4px;
+    /* Borda arredondada do polegar */
+    transition: width 0.6s; /* Adiciona uma transição suave para o efeito */
+}
+.card::-webkit-scrollbar-thumb:hover {
+    width: 14px; /* Largura aumentada da barra de rolagem ao passar o mouse por cima */
+  }
+
+.card::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Cor da pista da barra de rolagem */
+    border-radius: 4px;
+    /* Borda arredondada da pista */
+}

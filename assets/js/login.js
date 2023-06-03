@@ -20,8 +20,8 @@ const login = async (email, senha) => {
         console.log(response.ok);
         if (response.ok) {
             const data = await response.json();
-            const { user, token } = data
-            return { user, token }
+            const { userlogin, token } = data
+            return { userlogin, token }
         } else {
             throw new Error('Erro ao fazer login.');
         }
@@ -36,14 +36,14 @@ const handleLogin = async () => {
     const senha = passwordInput.value
 
     try {
-        const { user, token } = await login(email, senha)
-
-        localStorage.setItem('usuarioActual', JSON.stringify(user));
+        const { userlogin, token } = await login(email, senha)
+        console.log(userlogin);
+        localStorage.setItem('usuarioActual', JSON.stringify(userlogin));
         localStorage.setItem('token', token);
-        console.log(localStorage.getItem('user'));
+
 
         //Redirecionamento para a tela principal
-        return window.location.replace('home.html');
+        return window.location.href = "home-page.html";
 
     } catch (error) {
         console.error('Erro durante o login:', error)

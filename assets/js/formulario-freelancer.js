@@ -31,7 +31,7 @@ function save() {
     const user = JSON.parse(userRecuperado);
 
     user.area_actuacao = area_actuacao.value;
-    user.sobre = sobre.ariaValueMax;
+    user.sobre = sobre.value;
     user.tecnologias = tecnologia.value,
     user.experiencia = experiencia.value;
     user.ano_experiencia = anos_experiencia.parseI,
@@ -41,11 +41,11 @@ function save() {
     user.portifolio = portfolio.value,
     user.instagram = instagram.value,
 
-        window.location.replace("home.html");
-
+    
     axios.post(url, user)
-        .then(response => {
-            location.replace = "home.html"
+    .then(response => {
+            window.location.replace("home-page.html");
+            // location.replace = "home.html"
         })
         .catch(error => {
             console.log(error);

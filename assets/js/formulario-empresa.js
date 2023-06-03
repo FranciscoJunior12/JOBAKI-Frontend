@@ -40,7 +40,7 @@ function save() {
         .then(response => {
 
             if (response.status === 201) {
-                window.location.replace("home.html");
+                window.location.href = "home-page.html";
             }
         })
         .catch(error => {
