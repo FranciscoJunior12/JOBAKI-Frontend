@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Home - Posts</title>
+  <title>Perfil</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -15,9 +15,7 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +28,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/styleee.css" rel="stylesheet">
-  <link href="assets/css/style2.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -47,7 +44,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="home-page.html" class="logo d-flex align-items-center">
+      <a href="pages-blank-empresa.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">JOBAKI</span>
       </a>
@@ -215,20 +212,20 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2" id="nome_drop">K. Anderson</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="nome-perfil-icone">Vodacom</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6 id="nome_dropdown">Kevin Anderson</h6>
-              <span id="area_actuacao">Web Designer</span>
+              <h6 id="nome-dropdown">Vodacom</h6>
+              <span id="area-actuacao-icone">Telefonia Móvel</span>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile-empresa.html">
                 <i class="bi bi-person"></i>
                 <span>Meu Perfil</span>
               </a>
@@ -238,7 +235,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile-empresa.html">
                 <i class="bi bi-gear"></i>
                 <span>Definições da Conta</span>
               </a>
@@ -248,7 +245,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-contact.html">
+              <a class="dropdown-item d-flex align-items-center" href="pages-contact-empresa.html">
                 <i class="bi bi-question-circle"></i>
                 <span>Ajuda</span>
               </a>
@@ -278,12 +275,16 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="home-page.html">
+        <a class="nav-link collapsed" href="pages-blank-empresa.html">
           <i class="bi bi-grid"></i>
-          <span>Posts</span>
+          <span>Meus Projectos</span>
+        </a>
+        <a class="nav-link collapsed" href="pages-blank-empresa-criar-projecto.html">
+          <i class="bi bi-grid"></i>
+          <span>Criar Projecto</span>
         </a>
       </li><!-- End Dashboard Nav -->
-      <!-- 
+<!-- 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -361,7 +362,7 @@
           </li>
         </ul>
       </li>End Components Nav -->
-      <!-- 
+<!-- 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Forms</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -389,7 +390,7 @@
           </li>
         </ul>
       </li>End Forms Nav -->
-      <!-- 
+<!-- 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -407,7 +408,7 @@
           </li>
         </ul>
       </li>End Tables Nav -->
-      <!-- 
+<!-- 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-bar-chart"></i><span>Charts</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -430,8 +431,8 @@
           </li>
         </ul>
       </li>End Charts Nav -->
-      <!-- 
-      <li class="nav-item">
+
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-gem"></i><span>Icons</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -457,29 +458,27 @@
       <li class="nav-heading">Páginas</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link " href="users-profile-empresa.html">
           <i class="bi bi-person"></i>
           <span>Perfil</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      <!-- 
-      <li class="nav-item">
+
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="pages-faq.html">
           <i class="bi bi-question-circle"></i>
           <span>F.A.Q</span>
         </a>
-      </li> -->
-      <!-- End F.A.Q Page Nav -->
+      </li>End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact-empresa.html">
           <i class="bi bi-envelope"></i>
           <span>Assistência ao Usuário</span>
         </a>
-      </li>
-      <!-- End Contact Page Nav -->
-
-      <!-- <li class="nav-item">
+       </li><!--End Contact Page Nav -->
+<!-- 
+      <li class="nav-item">
         <a class="nav-link collapsed" href="pages-register.html">
           <i class="bi bi-card-list"></i>
           <span>Register</span>
@@ -492,8 +491,8 @@
           <span>Login</span>
         </a>
       </li>End Login Page Nav -->
-
-      <!-- <li class="nav-item">
+<!-- 
+      <li class="nav-item">
         <a class="nav-link collapsed" href="pages-error-404.html">
           <i class="bi bi-dash-circle"></i>
           <span>Error 404</span>
@@ -501,7 +500,7 @@
       </li>End Error 404 Page Nav -->
 
       <!-- <li class="nav-item">
-        <a class="nav-link " href="pages-blank.html">
+        <a class="nav-link collapsed" href="pages-blank.html">
           <i class="bi bi-file-earmark"></i>
           <span>Blank</span>
         </a>
@@ -514,233 +513,308 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Posts</h1>
+      <h1>Perfil</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="home-page.html">Home</a></li>
-          <li class="breadcrumb-item">Páginas</li>
-          <li class="breadcrumb-item active">Posts</li>
+          <li class="breadcrumb-item"><a href="pages-blank-empresa.html">Home</a></li>
+          <li class="breadcrumb-item">Usuários</li>
+          <li class="breadcrumb-item active">Perfil</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
 
-    <section class="section">
+    <section class="section profile">
       <div class="row">
-
-        <div class="col-lg-6">
+        <div class="col-xl-4">
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
 
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
+              <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+              <h2 id="nome-empresa-perfil">Vodacom</h2>
+              <h3 id="area-actuacao-empresa">Telefonia Móvel</h3>
+              <div class="social-links mt-2">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
+
         </div>
-        <div class="col-lg-6">
+
+        <div class="col-xl-8">
 
           <div class="card">
-            <div class="card-body">
+            <div class="card-body pt-3">
+              <!-- Bordered Tabs -->
+              <ul class="nav nav-tabs nav-tabs-bordered">
 
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
+                <li class="nav-item">
+                  <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Visão Geral</button>
+                </li>
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Editar Perfil</button>
+                </li>
+
+                <!-- <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-settings">Definições</button>
+                </li> -->
+
+                <li class="nav-item">
+                  <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Alterar Palavra-Passe</button>
+                </li>
+
+              </ul>
+              <div class="tab-content pt-2">
+
+                <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                  <h5 class="card-title">Sobre</h5>
+                  <p class="small fst-italic" id="sobre-empresa">Sufdnt est soluta temporibus accusantium neque nam maiores cumque temporibus. Tempora libero non est unde veniam est qui dolor. Ut sunt iure rerum quae quisquam autem eveniet perspiciatis odit. Fuga sequi sed ea saepe at unde.</p>
+
+                  <h5 class="card-title">Detalhes de Perfil</h5>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label " >Nome da Empresa</div>
+                    <div class="col-lg-9 col-md-8" id="nome-empresa">Vodacom</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Site</div>
+                    <div class="col-lg-9 col-md-8" id="site-visao-geral">vodacom.com</div>
+                  </div>
+
+                  <!-- <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Job</div>
+                    <div class="col-lg-9 col-md-8">Web Designer</div>
+                  </div> -->
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Província</div>
+                    <div class="col-lg-9 col-md-8" id="provincia-empresa-visao-geral">Maputo</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Endereço</div>
+                    <div class="col-lg-9 col-md-8" id="endereco-empresa-visao-geral">Bairro Central, Maputo, Moçambique</div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Email</div>
+                    <div class="col-lg-9 col-md-8" id="email-empresa-visao-geral">vodacom@vm.com</div>
+                  </div>
+
+                  <!-- <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Phone</div>
+                    <div class="col-lg-9 col-md-8">(436) 486-3538 x29071</div>
+                  </div> -->
+
+
+                </div>
+
+                <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                  <!-- Profile Edit Form -->
+                  <form>
+                    <div class="row mb-3">
+                      <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Imagem de Perfil</label>
+                      <div class="col-md-8 col-lg-9">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" id="imagem-perfil-editar-perfil">
+                        <div class="pt-2">
+                          <a href="#" class="btn btn-primary btn-sm" title="Upload new profile image"><i class="bi bi-upload"></i></a>
+                          <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i class="bi bi-trash"></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="nome-empresa-editar-perfil" class="col-md-4 col-lg-3 col-form-label">Nome</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="nome-empresa-editar-perfil" type="text" class="form-control" id="nome-empresa-editar-perfil">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="sobre-empresa-editar-perfil" class="col-md-4 col-lg-3 col-form-label">Sobre</label>
+                      <div class="col-md-8 col-lg-9">
+                        <textarea name="sobre-empresa-editar-perfil" class="form-control" id="sobre-empresa-editar-perfil" style="height: 100px"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="site-editar-perfil" class="col-md-4 col-lg-3 col-form-label">Site</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="fullName" type="text" class="form-control" id="site-editar-perfil">
+                      </div>
+                    </div>
+
+
+                    <div class="row mb-3">
+                      <label for="provincia-empresa-editar-perfil" class="col-md-4 col-lg-3 col-form-label">Província</label>
+                      <div class="col-md-8 col-lg-9">
+                          <select name="provincia-empresa-editar-perfil" id="provincia-empresa-editar-perfil" class="form-control" required>
+                              <option value="" selected disabled>--Seleccione--</option>
+                              <option value="maputo">Maputo</option>
+                              <option value="gaza">Gaza</option>
+                              <option value="inhambane">Inhambane</option>
+                              <option value="sofala">Sofala</option>
+                              <option value="manica">Manica</option>
+                              <option value="tete">Tete</option>
+                              <option value="zambezia">Zambézia</option>
+                              <option value="nampula">Nampula</option>
+                              <option value="niassa">Niassa</option>
+                              <option value="cabodelgado">Cabo Delgado</option>
+                          </select>
+                      </div>
+                  </div> 
+
+                    <div class="row mb-3">
+                      <label for="endereco-empresa-editar-perfil" class="col-md-4 col-lg-3 col-form-label">Endereço</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="endereco-empresa-editar-perfil" type="text" class="form-control" id="endereco-empresa-editar-perfil" >
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="email-empresa-editar-perfil" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email-empresa-editar-perfil" type="text" class="form-control" id="email-empresa-editar-perfil" >
+                      </div>
+                    </div>
+
+                    <!-- <div class="row mb-3">
+                      <label for="Country" class="col-md-4 col-lg-3 col-form-label">Anos de Experiência</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="country" type="text" class="form-control" id="Country" value="USA">
+                      </div>
+                    </div> -->
+
+                    <!-- <div class="row mb-3">
+                      <label for="Address" class="col-md-4 col-lg-3 col-form-label">Província</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="address" type="text" class="form-control" id="Address" value="A108 Adam Street, New York, NY 535022">
+                      </div>
+                    </div> -->
+<!-- 
+                    <div class="row mb-3">
+                      <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Perfil do Linkedin</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="phone" type="text" class="form-control" id="Phone">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Email" class="col-md-4 col-lg-3 col-form-label">Perfil do GitHub</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="email" type="email" class="form-control" id="Email">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="Twitter" class="col-md-4 col-lg-3 col-form-label">Portifólio</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="twitter" type="text" class="form-control" id="Twitter">
+                      </div>
+                    </div> -->
+
+<!-- 
+            
+                    <div class="row mb-3">
+                      <label for="Instagram" class="col-md-4 col-lg-3 col-form-label">Perfil do Instagram</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="instagram" type="text" class="form-control" id="Instagram">
+                      </div>
+                    </div> -->
+                    
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
+                  </form><!-- End Profile Edit Form -->
+
+                </div>
+
+                <div class="tab-pane fade pt-3" id="profile-settings">
+
+                  <!-- Settings Form -->
+                  <form>
+
+                    <div class="row mb-3">
+                      <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Email Notifications</label>
+                      <div class="col-md-8 col-lg-9">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="changesMade" checked>
+                          <label class="form-check-label" for="changesMade">
+                            Changes made to your account
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="newProducts" checked>
+                          <label class="form-check-label" for="newProducts">
+                            Information on new products and services
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="proOffers">
+                          <label class="form-check-label" for="proOffers">
+                            Marketing and promo offers
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="securityNotify" checked disabled>
+                          <label class="form-check-label" for="securityNotify">
+                            Security alerts
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </form><!-- End settings Form -->
+
+                </div>
+
+                <div class="tab-pane fade pt-3" id="profile-change-password">
+                  <!-- Change Password Form -->
+                  <form>
+
+                    <div class="row mb-3">
+                      <label for="palavra-passe-actual" class="col-md-4 col-lg-3 col-form-label">Palavra-Passe Actual</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="palavra-passe-actual" type="password" class="form-control" id="palavra-passe-actual">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="nova-palavra-passe" class="col-md-4 col-lg-3 col-form-label">Nova Palavra-Passe</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="nova-palavra-passe" type="password" class="form-control" id="nova-palavra-passe">
+                      </div>
+                    </div>
+
+                    <div class="row mb-3">
+                      <label for="nova-palavra-passe-confirmar" class="col-md-4 col-lg-3 col-form-label">Nova Palavra-Passe</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="nova-palavra-passe-confirmar" type="password" class="form-control" id="nova-palavra-passe-confirmar">
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-primary">Alterar Palavra-Passe</button>
+                    </div>
+                  </form><!-- End Change Password Form -->
+
+                </div>
+
+              </div><!-- End Bordered Tabs -->
+
             </div>
           </div>
+
         </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
       </div>
     </section>
 
@@ -760,8 +834,7 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -775,7 +848,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/home.js"></script>
 
 </body>
 

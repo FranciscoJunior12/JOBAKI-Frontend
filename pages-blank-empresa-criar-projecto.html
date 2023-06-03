@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Home - Posts</title>
+  <title>Home - Meus Projectos</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,8 +29,10 @@
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/styleee.css" rel="stylesheet">
-  <link href="assets/css/style2.css" rel="stylesheet">
+  <link href="assets/css/pages-blank-empresa-criar-projecto.css" rel="stylesheet">
+  <link href="assets/css/pages-blank-empresa-criar-projecto2.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- <link href="assets/css/style2.css" rel="stylesheet"> -->
 
   <!-- =======================================================
   * Template Name: NiceAdmin
@@ -47,7 +49,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="home-page.html" class="logo d-flex align-items-center">
+      <a href="pages-blank-empresa.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span class="d-none d-lg-block">JOBAKI</span>
       </a>
@@ -215,20 +217,20 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2" id="nome_drop">K. Anderson</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="nome-perfil-icone">Vodacom</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6 id="nome_dropdown">Kevin Anderson</h6>
-              <span id="area_actuacao">Web Designer</span>
+              <h6 id="nome-dropdown">Vodacom</h6>
+              <!-- <span id="area-actuacao-icone">Telefonia Móvel</span> -->
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile-empresa.html">
                 <i class="bi bi-person"></i>
                 <span>Meu Perfil</span>
               </a>
@@ -238,7 +240,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+              <a class="dropdown-item d-flex align-items-center" href="users-profile-empresa.html">
                 <i class="bi bi-gear"></i>
                 <span>Definições da Conta</span>
               </a>
@@ -248,7 +250,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-contact.html">
+              <a class="dropdown-item d-flex align-items-center" href="pages-contact-empresa.html">
                 <i class="bi bi-question-circle"></i>
                 <span>Ajuda</span>
               </a>
@@ -278,9 +280,13 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="home-page.html">
+        <a class="nav-link collapsed" href="pages-blank-empresa.html">
           <i class="bi bi-grid"></i>
-          <span>Posts</span>
+          <span>Meus Projectos</span>
+        </a>
+        <a class="nav-link collapsed" href="pages-blank-empresa-criar-projecto.html">
+          <i class="bi bi-grid"></i>
+          <span>Publicar Projecto</span>
         </a>
       </li><!-- End Dashboard Nav -->
       <!-- 
@@ -457,7 +463,7 @@
       <li class="nav-heading">Páginas</li>
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
+        <a class="nav-link collapsed" href="users-profile-empresa.html">
           <i class="bi bi-person"></i>
           <span>Perfil</span>
         </a>
@@ -472,7 +478,7 @@
       <!-- End F.A.Q Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-contact.html">
+        <a class="nav-link collapsed" href="pages-contact-empresa.html">
           <i class="bi bi-envelope"></i>
           <span>Assistência ao Usuário</span>
         </a>
@@ -514,12 +520,12 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Posts</h1>
+      <h1>Publicar Projecto</h1>
       <nav>
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="home-page.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="pages-blank-empresa.html">Home</a></li>
           <li class="breadcrumb-item">Páginas</li>
-          <li class="breadcrumb-item active">Posts</li>
+          <li class="breadcrumb-item active">Publicar Projecto</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -532,211 +538,89 @@
           <div class="card">
             <div class="card-body">
 
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
+              <!-- <div class="flex">
+                <h5 class="card-title"><a href="" style="color: #6358DC;"
+                    id="titulo-projecto-criar-projecto">Desenvolvimento de App Java</a></h5>
+                <a href="#" class="btn-proposta">Editar Projecto</a>
+              </div> -->
               <div>
-                <p class="data-publicacao">
+
+                <!-- <p class="data-publicacao">
                   Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
+                </p> -->
+
+                <div class="row mb-3">
+                  <label for="titulo-do-projecto-criar-projecto" class="col-md-4 col-lg-3 col-form-label" id="label-titulo">Título do Projecto: </label>
+                  <div>
+                    <input name="titulo-do-projecto-criar-projecto" type="text" class="form-control"
+                      id="titulo-do-projecto-criar-projecto" placeholder="@exemplo: Desenvolvimento de Aplicativo WEB">
+                  </div>
+                </div>
+
+                  <div class="row mb-3">
+                    <label for="descricao-projecto-criar-projecto" class="col-md-4 col-lg-3 col-form-label">Descrição do Projecto:</label>
+                      <div>
+                        <textarea name="descricao-projecto-criar-projecto" class="form-control" id="descricao-projecto-criar-projecto" style="height: 100px" ></textarea>
+                      </div>
+                  </div>
+                
+
+
+                <div class="row mb-3">
+                  <label for="tecnologias-criar-projecto" class="col-md-4 col-lg-3 col-form-label">Tecnologias: </label>
+                  <div>
+                    <input name="tecnologias-criar-projecto" type="text" class="form-control"
+                      id="tecnologias-criar-projecto" placeholder="@exemplo: Java, HTML, CSS, MongoDB...">
+                  </div>
+                </div>
+
+                <div class="row mb-3" >
+
+                  <label for="proposta-pagto-criar-projecto" class="col-md-4 col-lg-3 col-form-label" pl>Proposta de Pagamento:</label>
+                  <div>
+                    <input name="proposta-pagto-criar-projecto" type="text" class="form-control"
+                    id="proposta-pagto-criar-projecto" placeholder="@exemplo: 27.000,00 a 30.000,00 meticais">
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="disponibilidade-criar-projecto" class="col-md-4 col-lg-3 col-form-label">Disponibilidade Requerida: </label>
+                  <div>
+                    <input name="disponibilidade-criar-projecto" type="text" class="form-control"
+                    id="disponibilidade-criar-projecto" placeholder="@exemplo: Tempo Inteiro ou Parcial">
+                  </div>
+                </div>
+                
+                <div class="row mb-3" >
+                  <label for="anos-experiencia-criar-projecto" class="col-md-4 col-lg-3 col-form-label">Anos de Experiência: </label>
+                  <div>
+                    <input name="anos-experiencia-criar-projecto" type="text" class="form-control"
+                    id="anos-experiencia-criar-projecto" placeholder="@exemplo: 3 Anos">
+                  </div>
+                </div>
+                
+                <div class="row mb-3" >
+                  <label for="duracao-projecto-criar-projecto" class="col-md-4 col-lg-3 col-form-label">Duração do Projecto: </label>
+                  <div>
+                    <input name="duracao-projecto-criar-projecto" type="text" class="form-control"
+                    id="duracao-projecto-criar-projecto" placeholder="@exemplo: 3 Meses">
+                  </div>
+                </div>
+               
+
+
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="btn-criar-projecto">Publicar Projecto</button>
               </div>
             </div>
+            
+            <!-- <a href="#" class="btn-proposta">Editar Projecto</a> -->
+
           </div>
         </div>
-        <div class="col-lg-6">
 
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-
-          <div class="card">
-            <div class="card-body">
-
-              <div class="flex">
-                <h5 class="card-title"><a href="" style="color: #6358DC;">Desenvolvimento de App Java</a></h5>
-                <a href="#" class="btn-proposta">Fazer Proposta</a>
-              </div>
-              <div>
-                <p class="data-publicacao">
-                  Publicado: há 14 horas
-                </p>
-                <p class="descricao-total">
-                  A demanda de trabalho seria de edição de video
-                  Sendo 3 vídeos por semana para Youtube, a duração é variada. Mas fica em uma média de 4 até 8 minutos.
-                  E edição de 3 vídeos para Shorts, sendo que alguns deles poderão ser cortes do video maior.
-                  Como é um trabalho recorrente, favor deixar um orçamento mensal.
-                  Uma vez analisado, já será pago a proposta para iniciar.
-                <div>Categoria: Design e Multimedia</div>
-                <div>Subcategoria: Criar ou editar vídeo</div>
-                <div>Isso é um projeto ou uma posição de trabalho?: Um projeto</div>
-                <div>Disponibilidade requerida: Meio período</div>
-                <div>Eu fornecerei: Filmagem original, Logos, Fotos</div>
-                <div>Duração: Mais de 5 minutos</div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
 
 
@@ -775,7 +659,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/home.js"></script>
+  <script src="assets/js/criar-projectos.js"></script>
 
 </body>
 

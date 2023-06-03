@@ -43,7 +43,13 @@ const handleLogin = async () => {
 
 
         //Redirecionamento para a tela principal
-        return window.location.href = "home-page.html";
+        if (userlogin.perfil === "Freelancer") {
+
+            return window.location.href = "home-page.html";
+        } else {
+            return window.location.href = "pages-blank-empresa.html";
+
+        }
 
     } catch (error) {
         console.error('Erro durante o login:', error)

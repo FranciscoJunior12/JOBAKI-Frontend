@@ -1,0 +1,76 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f6f9ff;
+    color: #444444;
+}
+
+.card {
+    
+    min-height: 700px;
+    min-width: 70vw;
+    overflow-y: scroll;
+    display: flex;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-proposta {
+    /* display: flex; */
+    border: 2px solid #6358DC;
+    background-color: #6358DC;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    /* align-self: center;
+    justify-self: center; */
+    /* display: none; */
+    text-align: center;
+    width: 200px;
+    margin: 0px 0px 30px 30px;
+}
+
+.btn-proposta:hover{
+    color: white;
+    
+}
+
+.data-publicacao {
+    font-size: 11px;
+}
+
+.card::-webkit-scrollbar {
+    width: 8px;
+    /* Largura da barra de rolagem */
+}
+
+.card::-webkit-scrollbar-thumb {
+    background-color: #b9b6b6;
+    /* Cor do polegar da barra de rolagem */
+    border-radius: 4px;
+    /* Borda arredondada do polegar */
+    transition: width 0.6s; /* Adiciona uma transição suave para o efeito */
+}
+.card::-webkit-scrollbar-thumb:hover {
+    width: 14px; /* Largura aumentada da barra de rolagem ao passar o mouse por cima */
+  }
+
+.card::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    /* Cor da pista da barra de rolagem */
+    border-radius: 4px;
+    /* Borda arredondada da pista */
+}
+
+
+#label-titulo{
+    margin-top: 30px;   
+}
+
