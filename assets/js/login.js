@@ -43,7 +43,8 @@ const handleLogin = async () => {
 
 
         //Redirecionamento para a tela principal
-        if (userlogin.perfil === "Freelancer") {
+        console.log(userlogin.perfil)
+        if (userlogin.perfil == "Freelancer") {
 
             return window.location.href = "home-page.html";
         } else {
